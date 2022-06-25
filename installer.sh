@@ -29,6 +29,9 @@ else
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"	
 fi
 
+echo 'PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+echo 'PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
+
 #Install Cask
 which cask 1> /dev/null
 RESULT=$?
