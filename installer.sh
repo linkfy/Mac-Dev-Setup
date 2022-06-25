@@ -175,6 +175,10 @@ echo -e "\n[+] Installing m-cli"
 brew install m-cli
 echo -e "\n[+] Installing wget"
 brew install wget
-
+echo -e "\n[+] Getting background"
+wget https://github.com/linkfy/Mac-Dev-Setup/blob/main/Background.png\?raw\=true -O Background.png
+mv Background.png ~/Pictures/
+echo -e "\n[+] Setting background"
+m wallpaper ~/Pictures/Background.png
 echo -e "\n\n[~] Done!"
 brew cleanup
