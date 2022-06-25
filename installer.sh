@@ -176,7 +176,7 @@ brew install m-cli
 echo -e "\n[+] Installing wget"
 brew install wget
 echo -e "\n[+] Getting background"
-wget https://github.com/linkfy/Mac-Dev-Setup/blob/main/Background.png\?raw\=true -O Background.png
+wget https://raw.githubusercontent.com/linkfy/Mac-Dev-Setup/0dcba66eae43c3330e411bbe7d8c0c701726db27/Background.png -O Background.png
 mv Background.png ~/Pictures/
 echo -e "\n[+] Setting background"
 m wallpaper ~/Pictures/Background.png
