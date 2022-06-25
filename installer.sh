@@ -29,8 +29,9 @@ else
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"	
 fi
 
-echo 'PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
-echo 'PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
+activeuser=$(id -F | tr '[:upper:]' '[:lower:]')
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$activeuser/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 #Install Cask
 which cask 1> /dev/null
