@@ -180,5 +180,6 @@ wget https://github.com/linkfy/Mac-Dev-Setup/blob/main/Background.png\?raw\=true
 mv Background.png ~/Pictures/
 echo -e "\n[+] Setting background"
 m wallpaper ~/Pictures/Background.png
-echo -e "\n\n[~] Done!"
+echo -e "\n[+] Cleanup"
 brew cleanup
+echo -e "\n\n[~] Done!"
