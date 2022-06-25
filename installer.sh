@@ -149,8 +149,8 @@ echo -e "\n[+] Installing Telegram"
 brew install --cask telegram
 echo -e "\n[+] Installing Neovim"
 brew install neovim
-echo -e "\n[+] Installing NvChad in new tab"
-newtabi 'git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1; nvim'
+echo -e "\n[+] Installing NvChad"
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 echo -e "\n[+] Installing Rust"
 brew install rust
 echo -e "\n[+] Installing Go"
